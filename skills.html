@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="dist/output.css" rel="stylesheet">
+        <title>Hema's Portfolio</title>
+    </head>
+    <body class="h-screen">
+        <div id="header" class="sticky top-0 z-20 flex flex-row justify-between sm:items-center sm:pb-4 pt-4 lg:pb-0 border-bottom-LightBlue lg:border-b-0 sm:bg-teal-950 lg:bg-transparent">
+            <div class="flex lg:ml-20 md:ml-8 sm:ml-2 items-center p-0">
+                <p class="sm:self-center cursor-default text-3xl font-thin font-mono text-transparent bg-clip-text custom-gradient-left">PORTFOLIO</p>        
+            </div>
+            <div class="lg:flex justify-end md:hidden sm:hidden">
+                <div class="space-x-10 ml-auto mr-36 text-xl">
+                    <a href="index.html" class="text-LightBlue hover:text-white active:text-teal-900">Home</a>
+                    <a href="mywork.html" class="text-LightBlue hover:text-white active:text-teal-900">My work</a>
+                    <a href="skills.html" class="font-bold text-white hover:text-teal-900">Skills</a>
+                    <a href="aboutme.html" class="text-LightBlue hover:text-white active:text-teal-900">About me</a>
+                    <a href="contact.html" class="text-LightBlue hover:text-white active:text-teal-900">Contact</a>
+                </div>
+            </div>
+            <button id="menu-btn" class="block hamburger sm:mt-3 mr-16 lg:hidden focus:outline-none">
+                <span class="hamburger-top bg-LightBlue"></span>
+                <span class="hamburger-middle bg-LightBlue"></span>
+                <span class="hamburger-bottom bg-LightBlue"></span>
+            </button>
+        </div>
+        <div id="menu" class="lg:hidden fixed z-10 left-8 right-8 overflow-hidden menuClose">
+            <div class="border-LightBlue border-x-2 border-b-2 flex-col flex items-center py-8 space-y-6 font-bold text-DarkBlue bg-teal-500 sm:self-center drop-shadow-md rounded-b-lg">                
+                <a href="index.html" class="hover:text-white text-lg">Home</a>
+                <a href="mywork.html" class="hover:text-white text-lg">My work</a>
+                <a href="skills.html" class="text-white text-lg font-bold">Skills</a>
+                <a href="aboutme.html" class="hover:text-white text-lg">About me</a>
+                <a href="contact.html" class="hover:text-white text-lg">Contact</a>
+            </div>
+        </div>
+        <div class="flex flex-col lg:space-y-12 sm:space-y-16 sm:pb-20 p-8">
+            <div class="lg:p-8 lg:mt-10 sm:mt-14">
+                <h1 class="md:text-4xl sm:text-3xl text-center text-LightBlue font-mono">TECHNOLOGIES</h1>
+            </div>
+            <!-- lg screen -->
+            <div class="lg:flex place-items-center sm:hidden lg:space-y-20 lg:flex-col px-12 items-start">
+                <!-- frontend -->
+                <div class="flex ml-20">
+                    <div class="flex-row flex items-center space-x-10 w-full">
+                        <h2 class="w-48 cursor-default text-3xl text-LightBlue text-center font-mono hover:border-LightBlue hover:border-2 rounded-2xl">FRONTEND</h2>
+                        <div class="space-x-6">
+                            <div class="relative group inline-block">
+                                <img src="img/html5.png" class="md:h-24 md:w-24 shadow-lg shadow-cyan-500/50 rounded-xl min-w-40">
+                                <div class="cursor-default flex opacity-0 hover:opacity-100 absolute inset-0 justify-center text-center items-center hover:backdrop-blur-xl rounded-xl text-DarkBlue font-mono font-bold"><p>HTML</p></div>
+                            </div>
+                            <div class="relative group inline-block">
+                                <img src="img/cssLogo.png" class="md:h-24 md:w-24 shadow-lg shadow-cyan-500/50 rounded-xl min-w-40">
+                                <div class="cursor-default flex opacity-0 hover:opacity-100 absolute inset-0 justify-center text-center items-center hover:backdrop-blur-xl rounded-xl text-DarkBlue font-mono font-bold"><p>CSS</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- backend -->
+                <div class="flex ml-20">
+                    <div class="flex-row flex items-center space-x-10 w-full">
+                        <h2 class="w-48 cursor-default text-3xl text-LightBlue text-center hover:border-LightBlue hover:border-2 rounded-2xl font-mono">BACKEND</h2>
+                        <div class="space-x-6">
+                            <div class="relative group inline-block">
+                                <img src="img/javascript.png" class="md:h-24 md:w-24 shadow-lg shadow-cyan-500/50 rounded-xl min-w-40">
+                                <div class="cursor-default flex opacity-0 hover:opacity-100 absolute inset-0 justify-center text-center items-center hover:backdrop-blur-xl rounded-xl text-DarkBlue font-mono font-bold"><p>JAVASCRIPT</p></div>
+                            </div>
+                            <div class="relative group inline-block">
+                                <img src="img/java.jpg" class="md:h-24 md:w-24 shadow-lg shadow-cyan-500/50 rounded-xl min-w-40">
+                                <div class="cursor-default flex opacity-0 hover:opacity-100 absolute inset-0 justify-center text-center items-center hover:backdrop-blur-xl rounded-xl text-DarkBlue font-mono font-bold"><p>JAVA</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- database -->
+                <div class="flex ml-20">
+                    <div class="flex flex-row items-center space-x-10 w-full">
+                        <h2 class="w-48 cursor-default text-3xl text-LightBlue text-center font-mono hover:border-LightBlue hover:border-2 rounded-2xl">DATABASE</h2>
+                        <div class="space-x-6">
+                            <div class="relative group inline-block">
+                                <img src="img/sql.png" class="md:h-24 md:w-24 shadow-lg shadow-cyan-500/50 rounded-xl min-w-40">
+                                <div class="cursor-default flex opacity-0 hover:opacity-100 absolute inset-0 justify-center text-center items-center hover:backdrop-blur-xl rounded-xl text-DarkBlue font-mono font-bold"><p>SQL</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sm:hidden lg:flex flex-col space-y-16 p-8 pb-44">
+            <div class="lg:p-8 lg:mt-10 sm:mt-14">
+                <h1 class="text-4xl text-center text-LightBlue font-mono">CERTIFICATES / LEARNING RESOURCES</h1>
+            </div>
+            <div id="resources" class="flex mx-auto w-3/4 flex-col space-y-32">
+                <article class="flex flex-row resource start-resource-even">
+                    <div class="text-justify w-1/2 backdrop-blur-3xl border-cyan-200 border-2 rounded-2xl py-5 px-8 mr-3 space-y-3">
+                        <h2 class="text-center text-cyan-200 text-2xl font-mono">NPTEL-JAVA</h2>
+                        <p class="text-white">
+                            NPTEL (National Programme on Technology Enhanced Learning) is a prestigious online learning platform funded by the Ministry of Education, Government of India, offering high-quality technical courses from India's top institutions.
+I successfully completed the "Programming in Java" course offered by IIT Kharagpur through NPTEL, earning the Elite certification with a consolidated score of 85%. This 12-week rigorous course covered fundamental to advanced concepts of Java programming, including object-oriented programming (OOP), exception handling, multithreading, collections, and Java APIs.This certification has enhanced my proficiency in Java and strengthened my foundation in software development, which I aim to apply in real-world projects.<span class="text-cyan-200"><a href="https://nptel.ac.in/" class="underline ml-3">Learn more</a></span>
+                        </p>
+                    </div>
+                    <img src="img/nptelJava.jfif" class="w-1/2 ml-3 rounded-2xl"/>
+                </article>
+                <article class="flex flex-row resource start-resource-odd">
+                    <img src="img/hackerrankJava.jfif" class="w-1/2 mr-3 rounded-2xl"/>
+                    <div class="text-justify w-1/2 backdrop-blur-3xl border-white border-2 rounded-2xl py-5 px-8 ml-3 space-y-3">
+                        <h2 class="text-center text-white text-2xl font-mono">HACKERRANK-JAVA</h2>
+                        <p class="text-white">
+                            HackerRank is a well-known platform for coding challenges and technical skill assessments, widely recognized by industry professionals and employers.
+
+I successfully earned the Java (Basic) Certification from HackerRank by clearing the skill assessment on April 16, 2022. This certification validates my fundamental knowledge of Java programming, including core concepts such as data types, loops, conditionals, functions, object-oriented programming (OOP), and basic problem-solving techniques.
+
+The assessment tested my ability to write efficient Java code, solve algorithmic problems, and apply programming logic effectively. Achieving this certification demonstrates my proficiency in Java and my commitment to continuously improving my coding skills.
+                            <span><a href="https://www.hackerrank.com/" class="text-white underline">Learn more</a></span>
+                        </p>
+                    </div>
+                </article>
+                <article class="flex flex-row resource start-resource-even">
+                    <div class="text-justify w-1/2 backdrop-blur-3xl border-lime-600 border-2 rounded-2xl py-5 px-8 mr-3 space-y-3">
+                        <h2 class="text-center text-lime-600 text-2xl font-mono">NPTEL-DBMS</h2>
+                        <p class="text-white">
+                            NPTEL (National Programme on Technology Enhanced Learning) is a highly reputed online learning platform funded by the Ministry of Education, Government of India, offering courses from premier institutions like IITs.
+
+I successfully completed the "Database Management System" course offered by IIT Kharagpur through NPTEL. This 8-week course (Aug–Oct 2022) covered fundamental and advanced concepts of database systems, SQL, relational algebra, normalization, indexing, transaction management, and database design.
+
+This certification has enhanced my knowledge of database management, improving my ability to work with SQL queries, relational models, and database optimization techniques, which are essential for software development and data-driven applications.<span><a href="https://nptel.ac.in/" class="text-lime-600 underline ml-3">Learn more</a></span>
+                        </p>
+                    </div>
+                    <img src="img/nptelDbms.jfif" class="w-1/2 ml-3 rounded-2xl"/>
+                </article>
+                
+            </div>
+        </div>
+        <script src="js/button.js"></script>
+        <script src="js/observer.js" defer></script>
+        <script src="js/observeScroll.js"></script>
+    </body>
+</html>

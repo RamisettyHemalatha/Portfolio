@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="dist/output.css" rel="stylesheet">
+    <title>Hema's Portfolio</title>
+</head>
+<body class="">
+    <div id="header" class="sticky top-0 z-20 flex flex-row justify-between sm:items-center sm:pb-4 pt-4 lg:pb-0 border-bottom-LightBlue lg:border-b-0 sm:bg-teal-950 lg:bg-transparent">
+        <div class="flex lg:ml-20 md:ml-8 sm:ml-2 items-center p-0">
+            <p class="sm:self-center cursor-default text-3xl font-thin font-mono text-transparent bg-clip-text custom-gradient-left">PORTFOLIO</p>        
+        </div>
+        <div class="lg:flex justify-end md:hidden sm:hidden">
+            <div class="space-x-10 ml-auto mr-36 text-xl">
+                <a href="index.html" class="text-LightBlue hover:text-white active:text-teal-900">Home</a>
+                <a href="mywork.html" class="text-LightBlue hover:text-white active:text-teal-900">My work</a>
+                <a href="skills.html" class="text-LightBlue hover:text-white active:text-teal-900">Skills</a>
+                <a href="aboutme.html" class="text-white font-bold hover:text-teal-900">About me</a>
+                <a href="contact.html" class="text-LightBlue hover:text-white active:text-teal-900">Contact</a>
+            </div>
+        </div>
+        <button id="menu-btn" class="block hamburger sm:mt-3 mr-16 lg:hidden focus:outline-none">
+            <span class="hamburger-top bg-LightBlue"></span>
+            <span class="hamburger-middle bg-LightBlue"></span>
+            <span class="hamburger-bottom bg-LightBlue"></span>
+        </button>
+    </div>
+    <div id="menu" class="lg:hidden fixed z-10 left-8 right-8 overflow-hidden menuClose">
+        <div class="border-LightBlue border-x-2 border-b-2 flex-col flex items-center py-8 space-y-6 font-bold text-DarkBlue bg-teal-500 sm:self-center drop-shadow-md rounded-b-lg">
+            <a href="index.html" class="hover:text-white text-lg">Home</a>
+            <a href="mywork.html" class="hover:text-white text-lg">My work</a>
+            <a href="skills.html" class="hover:text-white text-lg">Skills</a>
+            <a href="aboutme.html" class="text-white text-lg font-bold">About me</a>
+            <a href="contact.html" class="hover:text-white text-lg">Contact</a>
+        </div>
+    </div>
+    <div class="lg:space-y-8 sm:space-y-10 md:pb-14 sm:pb-8">
+        <div class="lg:p-8 lg:mt-10 sm:mt-14">
+            <h1 class="md:text-4xl text-3xl text-center text-LightBlue font-mono">ABOUT ME</h1>
+        </div>
+        <div class="lg:flex flex-row justify-center space-x-32 sm:hidden">
+            <div class="backdrop-blur-2xl w-4/12 rounded-3xl border-LightBlue p-3">
+                <p class="text-justify text-xl text-white m-3 indent-8 ">
+                    Hello, my name is Ramisetty Hemalatha. I recently graduated with a Bachelor’s degree in Computer Science and Engineering from Vignan’s Nirula Institute of Technology and Science for Women, with a CGPA of 8.7. I have a strong passion for software development and problem-solving, and I am skilled in Java, Python, SQL, and web development.<br><br>
+
+During my studies, I worked on several projects, including a Medicinal Plant Recognition system using Deep Learning. In this project, I used the MobileNetV2 model to classify medicinal plants based on leaf images, achieving 95% accuracy. It was a great learning experience in machine learning, image processing, and optimization for mobile applications.<br><br>
+
+Another project I developed was a portfolio website to showcase my skills, projects, and certifications. I built it using HTML, CSS, and JavaScript, focusing on creating a clean and interactive user experience.
+                </p>
+            </div>
+            <div class="backdrop-blur-2xl w-4/12 rounded-3xl border-LightBlue">
+                <p class="text-justify text-xl text-white m-3 p-3">
+                    Apart from projects, I also presented a paper on Ads Click-Through Rate Prediction using Attention-Based LSTM at a conference. This experience helped me enhance my research, presentation, and analytical skills.<br><br>
+
+Currently, I am pursuing a Java Full Stack Development course at Jspiders, where I am gaining hands-on experience in Spring, Hibernate, Servlets, and front-end development. Additionally, I have earned certifications in Java, Python, and Design Thinking, which have strengthened my technical knowledge.<br><br>
+
+I am highly motivated to start my career in software development and am eager to contribute to a dynamic team. My goal is to apply my skills in developing scalable applications, solving real-world problems, and continuously learning new technologies.<br><br>          
+                </p>
+                <div class="p-10 flex flex-row justify-center space-x-1">
+                    <a href="resume/Resume1(Profile).pdf" target="_blank"><p class="text-white glowing-underline">Click here to check my CV |</p></a>
+                    <a href="resume/Resume1(Profile).pdf" target="_blank"><img src="img/linkclick.png" class="h-6 w-6 invert"></a>
+                </div>
+            </div>
+        </div>
+        <script src="js/button.js"></script>
+    <script src="js/observeScroll.js"></script>
+</body>
+</html>
