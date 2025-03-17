@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="dist/output.css" rel="stylesheet">
+    <title>Hema's Portfolio</title>
+</head>
+<body class="overflow-x-hidden">
+    <div id="header" class="sticky top-0 z-20 flex flex-row justify-between sm:items-center sm:pb-4 pt-4 lg:pb-0 border-bottom-LightBlue lg:border-b-0 sm:bg-teal-950 lg:bg-transparent">
+        <div class="flex lg:ml-20 md:ml-8 sm:ml-2 items-center p-0">
+            <p class="sm:self-center cursor-default text-3xl font-thin font-mono text-transparent bg-clip-text custom-gradient-left">PORTFOLIO</p>
+        </div>
+        <div class="lg:flex justify-end md:hidden sm:hidden">
+            <div class="space-x-10 ml-auto mr-36 text-xl">
+                <a href="index.html" class="text-LightBlue hover:text-white active:text-teal-900">Home</a>
+                <a href="#" class="font-bold text-white hover:text-teal-900">My work</a>
+                <a href="skills.html" class="text-LightBlue hover:text-white ">Skills</a>
+                <a href="aboutme.html" class="text-LightBlue hover:text-white active:text-teal-900">About me</a>
+                <a href="contact.html" class="text-LightBlue hover:text-white active:text-teal-900">Contact</a>
+            </div>
+        </div>
+        <button id="menu-btn" class="block hamburger sm:mt-3 mr-16 lg:hidden focus:outline-none">
+            <span class="hamburger-top bg-LightBlue"></span>
+            <span class="hamburger-middle bg-LightBlue"></span>
+            <span class="hamburger-bottom bg-LightBlue"></span>
+        </button>
+    </div>
+    <div id="menu" class="lg:hidden fixed z-10 left-8 right-8 overflow-hidden menuClose">
+        <div class="border-LightBlue border-x-2 border-b-2 flex-col flex items-center py-8 space-y-6 font-bold text-DarkBlue bg-teal-500 sm:self-center drop-shadow-md rounded-b-lg">            
+            <a href="index.html" class="hover:text-white text-lg">Home</a>
+            <a href="mywork.html" class="text-white text-lg font-bold">My work</a>
+            <a href="skills.html" class="hover:text-white text-lg">Skills</a>
+            <a href="aboutme.html" class="hover:text-white text-lg font-bold">About me</a>
+            <a href="contact.html" class="hover:text-white text-lg">Contact</a>
+        </div>
+    </div>
+    <div class="flex flex-col">
+        <div class="md:p-8 lg:mt-10 sm:mt-14 lg:pb-0">
+            <h1 class="text-3xl md:text-4xl text-center text-LightBlue font-mono">MY PROJECT WORK</h1>
+        </div>
+        <div id="recentlyAddedProjects" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center gap-y-10 px-5 pt-10 items-stretch">
+            <div id="storefrontend" class="recentlyAdded recentlyAdded-start flex flex-col sm:w-72 md:w-80 space-y-4">
+                <div class="relative group">
+                    <div>
+                        <div>
+                            <img src="img/mobilenetv2.webp" class="h-48 w-full shadow-lg shadow-cyan-500/50 group-hover:shadow-none">
+                            <div class="md:flex sm:hidden">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="backdrop-blur-lg border-LightBlue rounded-xl">
+                    <p class="text-justify text-white  m-3">
+                        This is a Medicinal Plant Recognition System built using MobileNetV2. The system allows users to identify medicinal plants by analyzing images of their leaves. It leverages the MobileNetV2 deep learning model for efficient and accurate plant classification.</p>
+                </div>
+            </div>
+            <div id="dex" class="delay-150 recentlyAdded recentlyAdded-start flex flex-col sm:w-72 md:w-80 space-y-4">
+                <div class="relative group">
+                    <div>
+                        <div>
+                            <img src="img/shoppingJDBC.webp" class="h-48 w-full shadow-lg shadow-cyan-500/50 group-hover:shadow-none">
+                        </div>
+                    </div>
+                </div>
+                <div class="backdrop-blur-lg border-LightBlue rounded-xl">
+                    <p class="text-justify text-white m-3">
+This is a Java Standalone Shopping Application built using JDBC technology. Users can browse and purchase items in a desktop-based environment. The project leverages JDBC for seamless database interactions, ensuring efficient data retrieval, storage, and management. </p>
+                </div>
+            </div>
+            <div id="weaveswap" class="delay-300 recentlyAdded recentlyAdded-start flex flex-col sm:w-72 md:w-80 space-y-4">
+                <div class="relative group">
+                    <div>
+                        <div>
+                            <img src="img/portfolio.webp" class="h-48 w-full shadow-lg shadow-cyan-500/50 group-hover:shadow-none">
+                        </div>
+                    </div>
+                </div>
+                <div class="backdrop-blur-lg border-LightBlue rounded-xl">
+                    <p class="text-justify text-white  m-3">
+                        This is a modern and responsive portfolio website built using HTML, CSS, and JavaScript. It showcases my projects, skills, and experience in web development. The website is a fully responsive design to ensure a great user experience across all devices.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/button.js"></script>
+    <script src="js/projects.js" defer></script>
+    <script src="js/observeScroll.js"></script>
+</body>
+</html>
